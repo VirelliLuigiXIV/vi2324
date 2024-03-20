@@ -1,6 +1,9 @@
 x = int(input("inserisci un numero composto dal tuo giorno e mese di nascita"
             + "(es. 02/10/2006, il numero è 210)"))
+cog = str(input("inserisci cognome"))
 for num in range(x-25,x+25):
+ if num % x == 0:
+     print(cog,end="")
  if num % 3 == 0:
      print("Fizz",end="")
  if num % 5 == 0:
@@ -12,4 +15,3 @@ for num in range(x-25,x+25):
     and num % 14 != 0:
      print(num,end="")
  print("")
-     
